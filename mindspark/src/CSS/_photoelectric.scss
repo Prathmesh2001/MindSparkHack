@@ -1,9 +1,26 @@
+
+
 .photorow{
-    height: 500px;
+    min-height: fit-content;
+    // border: 2px solid green;
+    box-shadow: 0 0 35px 2px rgba(0,0,0,0.3);
 }
 
+.photo-electric{
+    .row>*{
+        padding: 0;
+    }
+    
+}
+
+
 .photocol{
-    border: 2px solid red;
+    // border: 1px solid $primary;
+    padding: 0;
+    input[type='number']{
+        border: 1px solid #7d7d7d;
+        padding: 5px 5px;
+    }
 }
 
 .output{
@@ -15,7 +32,9 @@
 .rays{
     height: 300px;
     position: relative;
-    border: 2px solid green;
+    // border: 2px solid green;
+    background-color: rgb(140, 232, 255);
+    z-index: -2;
 }
 
 .electron_element{
@@ -23,20 +42,37 @@
     width: 100%;
     display: grid;
     grid-template-columns: repeat(15,1fr);
-    border: 2px solid grey;
+    // border: 2px solid grey;
+    z-index: 2;
+    background: #ccc;
 }
 
 .electrons{
     height: 20px;
     width: 20px;
     border-radius: 50%;
-    background-color: #7d7d7d;
+    background-color: $primary;
+    color: #fff;
 }
 
-.bi-brightness-high{
+.bi-brightness-high-fill{
     position: absolute;
     top: 10px;
     left: 10px;
+    color: $yellow;
+    animation: rotating 8s infinite;
+    animation-timing-function: linear;
+}
+@keyframes rotating{
+    0%{
+        transform: rotateZ(0deg);
+    }
+    50%{
+        transform: rotateZ(180deg);
+    }
+    100%{
+        transform: rotateZ(360deg);
+    }
 }
 
 .arrowup1{
@@ -58,15 +94,56 @@
 .arrowdown1{
     position: absolute;
     top: 300px;
-    left: 400px;
+    left: 410px;
 }
 .arrowdown2{
     position: absolute;
     top: 300px;
-    left: 450px;
+    left: 470px;
 }
 .arrowdown3{
     position: absolute;
     top: 300px;
-    left: 500px;
+    left: 530px;
+}
+
+.bi-arrow-down-right{
+    color: $yellow;
+    animation: down-function 3s infinite ;
+    animation-timing-function: ease;
+    z-index: -1;
+}
+@keyframes down-function{
+    0%{
+        transform: translate(0, 0);
+    }
+    100%{
+        transform: translate(15rem, 15rem);
+    }
+}
+
+
+.bi-arrow-up-right,
+.electrons:nth-child(8),
+.electrons:nth-child(9),
+.electrons:nth-child(10)
+{
+    animation: up-function 3s infinite ;
+    animation-delay: 1s;
+    animation-timing-function: ease;
+    
+}
+
+.bi-arrow-up-right{
+    z-index: -1;
+    color: $dark-red;
+}
+
+@keyframes up-function{
+    0%{
+        transform: translate(0, 0);
+    }
+    100%{
+        transform: translate(15rem, -15rem);
+    }
 }

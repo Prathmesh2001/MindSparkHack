@@ -10,6 +10,14 @@ body {
   padding: 0 !important;
 }
 
+.navbar .nav-item {
+  padding: 0 1rem;
+}
+
+.navbar .nav-item a, .navbar .nav-item a:visited, .navbar .nav-item a:active {
+  text-decoration: none;
+}
+
 .rot {
   width: 100px;
   height: 100px;

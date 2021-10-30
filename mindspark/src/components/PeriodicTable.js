@@ -16,22 +16,28 @@ const colorMap = {
 
 const PeriodicTable = () => {
   return (
-    <div className="periodic-table">
-      {data.elements.map((element) => (
-        <div
-          className="element"
-          key={element.name}
-          style={{
-            gridRow: element.ypos,
-            gridColumn: element.xpos,
-            borderColor: colorMap[element.category],
-          }}
-        >
-          <strong>{element.symbol}</strong>
-          <small className="number">{element.number}</small>
-          <small className="name">{element.name}</small>
+    <div className="periodic-page">
+      <h1 className="py-5">Periodic Table of Elements</h1>
+      <div className="container my-5 ">
+        <div className="periodic-table my-5">
+
+          {data.elements.map((element) => (
+            <div
+              className="element"
+              key={element.name}
+              style={{
+                gridRow: element.ypos,
+                gridColumn: element.xpos,
+                borderColor: colorMap[element.category],
+              }}
+            >
+              <strong>{element.symbol}</strong>
+              <small className="number">{element.number}</small>
+              <small className="name">{element.name}</small>
+            </div>
+          ))}
         </div>
-      ))}
+      </div>
     </div>
   );
 };

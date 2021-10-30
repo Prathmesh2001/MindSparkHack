@@ -18,7 +18,7 @@ function Bonding() {
                                 {/* <img src="https://24.media.tumblr.com/d1b1721c8afbb4235cfdc70819ff572e/tumblr_muq0m7ysZ01sjwwzso1_500.gif" alt="ionic bond" /> */}
                                 <div className="img-container">
 
-                                <img src="https://th.bing.com/th/id/R.502a053c893b2757ea0d570a93be6763?rik=Zw2HbQ4oFvkA7w&riu=http%3a%2f%2fwww.electrical4u.com%2fimages01%2fanimated-nacl.gif&ehk=wrL6ndN1GtVTVnnEjhBrBdkcIcsSf35o7M9oDcJGtMM%3d&risl=&pid=ImgRaw&r=0" alt="ionic bond" />
+                                    <img src="https://th.bing.com/th/id/R.502a053c893b2757ea0d570a93be6763?rik=Zw2HbQ4oFvkA7w&riu=http%3a%2f%2fwww.electrical4u.com%2fimages01%2fanimated-nacl.gif&ehk=wrL6ndN1GtVTVnnEjhBrBdkcIcsSf35o7M9oDcJGtMM%3d&risl=&pid=ImgRaw&r=0" alt="ionic bond" />
                                 </div>
                             </div>
                         </div>
@@ -32,7 +32,7 @@ function Bonding() {
                                 {/* <img src="https://media.giphy.com/media/11mMlZmTMYkyaI/giphy.gif" alt="covalent bond" /> */}
                                 <div className="img-container">
 
-                                <img src="https://qph.fs.quoracdn.net/main-qimg-0902fc5a377dfc989ef998f8965bb585" alt="covalent bond" />
+                                    <img src="https://qph.fs.quoracdn.net/main-qimg-0902fc5a377dfc989ef998f8965bb585" alt="covalent bond" />
                                 </div>
                             </div>
                         </div>

@@ -1,5 +1,8 @@
+
+
 .navbar{
-    
+    z-index: 3;
+    border-bottom: 1px solid $grey;
     .nav-item{
         padding: 0 1rem;
 
@@ -15,16 +18,7 @@
     display: flex;
     align-items: center;
     img{
-        width: 3rem;
+        width: 3.5rem;
     }
 }
 
-.home-page{
-    min-height: 100vh;
-}
-
-.home-img{
-    position: absolute;
-    bottom: 0;
-    width: 100%;    
-}

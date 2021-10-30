@@ -10,7 +10,7 @@ import {
 import './CSS/styles.css';
 import './CSS/bootstrap.min.css';
 import PeriodicTable from "./components/PeriodicTable"
-import Photoelectric from './components/Sample';
+import Photoelectric from './components/Photoelectric';
 import Home from './components/Home';
 import Bonding from './components/Bonding';
 import Sample from './components/Sample';
@@ -44,7 +44,6 @@ function App() {
 
 
           <Route exact path="/Sample">
-
             <Sample />
           </Route>
 

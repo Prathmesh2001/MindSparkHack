@@ -1,9 +1,9 @@
 
   .cup {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    // position: absolute;
+    // bottom: 0;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
     width: 150px;
     height: 180px;
     border: 6px solid #262626;
@@ -21,4 +21,19 @@
   @keyframes filling {
     50% {background-position: 3000px 0px;}
     100% {background-position: 6000px 350px;}
+  }
+
+
+
+  .flask{
+    img{filter: hue-rotate(200deg);}
+  }
+  .fire-img{
+    width: 5rem;
+    transform: translateY(-50px);
+    img{
+      width: 100%;
+      filter: sepia(95%);
+    }
+
   }

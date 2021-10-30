@@ -1,13 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap");
 body {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: #333446;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .card {
   padding: 0 !important;
+}
+
+.center-object-vertical {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.center-object-horizontal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar {
+  z-index: 3;
+  border-bottom: 1px solid #7d7d7d;
 }
 
 .navbar .nav-item {
@@ -29,17 +65,213 @@ body {
 }
 
 .logo img {
-  width: 3rem;
+  width: 3.5rem;
 }
 
-.home-page {
+.bg-home {
+  background-color: #000000;
+  background-image: linear-gradient(315deg, #06337a 10%, #06acda 74%);
+  background-size: 200%;
+  -webkit-animation: gradient 5s infinite;
+          animation: gradient 5s infinite;
+}
+
+.bg-home .home-page {
   min-height: 100vh;
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
 }
 
 .home-img {
   position: absolute;
   bottom: 0;
   width: 100%;
+}
+
+.choose {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 3rem;
+}
+
+.glass {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.35);
+  border-radius: 10px;
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10.3px);
+  -webkit-backdrop-filter: blur(8.3px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  width: 30rem;
+  height: 35rem;
+  margin: 2rem;
+  padding: 1rem;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: 'Comic Neue', cursive;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  overflow: hidden;
+}
+
+.glass img, .glass h3 {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.glass .learn-links {
+  display: none;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.glass .learn-links a, .glass .learn-links a:visited, .glass .learn-links a:active {
+  text-decoration: none;
+  color: #fff;
+}
+
+.glass .learn-links li {
+  font-size: x-large;
+  margin: 2rem 0;
+  border-bottom: 2px solid #fff;
+}
+
+.glass:hover {
+  font-size: large;
+  -webkit-box-shadow: 0 0 45px 3px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 45px 3px rgba(0, 0, 0, 0.4);
+  position: relative;
+}
+
+.glass:hover h3 {
+  -webkit-transform: scale(1.5) translateY(1rem);
+          transform: scale(1.5) translateY(1rem);
+}
+
+.glass:hover img {
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-transform: translateY(8rem) rotateZ(45deg) scale(1.2);
+          transform: translateY(8rem) rotateZ(45deg) scale(1.2);
+}
+
+.glass:hover .learn-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  padding-right: 1.5rem;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+
+.periodic-container {
+  position: relative;
+}
+
+.periodic-page {
+  background: url("/static/images/connectwork.png");
+  background-size: 10%;
+  background-repeat: repeat;
+}
+
+.periodic-page h1 {
+  color: #fff;
+}
+
+.periodic-page {
+  min-height: 120vh;
+}
+
+.periodic-table {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (64px)[18];
+      grid-template-columns: repeat(18, 64px);
+  -ms-grid-rows: (64px)[10];
+      grid-template-rows: repeat(10, 64px);
+  grid-gap: 4px;
+  position: absolute;
+  top: 2rem;
+  left: 5%;
+  -webkit-transform: translateY(-10rem);
+          transform: translateY(-10rem);
+}
+
+.element {
+  background: white;
+  border: 1px solid #aaa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.element:hover {
+  -webkit-transform: scale(1.25, 1.25);
+          transform: scale(1.25, 1.25);
+  z-index: 1;
+}
+
+.element .number {
+  font-size: 8px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.element .name {
+  font-size: 8px;
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
 }
 
 .rot {
@@ -294,11 +526,6 @@ body {
 }
 
 .cup {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   width: 150px;
   height: 180px;
   border: 6px solid #262626;
@@ -331,6 +558,23 @@ body {
   100% {
     background-position: 6000px 350px;
   }
+}
+
+.flask img {
+  -webkit-filter: hue-rotate(200deg);
+          filter: hue-rotate(200deg);
+}
+
+.fire-img {
+  width: 5rem;
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
+}
+
+.fire-img img {
+  width: 100%;
+  -webkit-filter: sepia(95%);
+          filter: sepia(95%);
 }
 
 /* ########################## Footer ############################## */

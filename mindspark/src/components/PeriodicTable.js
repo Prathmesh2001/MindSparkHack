@@ -1,6 +1,6 @@
 import React from "react";
 import data from "../PeriodicTableJSON.json"
-import "../CSS/PeriodicTable.css";
+// import "../CSS/PeriodicTable.css";
 
 const colorMap = {
   "noble gas": "#FFBC42",
@@ -18,7 +18,7 @@ const PeriodicTable = () => {
   return (
     <div className="periodic-page">
       <h1 className="py-5">Periodic Table of Elements</h1>
-      <div className="container my-5 ">
+      <div className="container periodic-container my-5 ">
         <div className="periodic-table my-5">
 
           {data.elements.map((element) => (
@@ -29,6 +29,8 @@ const PeriodicTable = () => {
                 gridRow: element.ypos,
                 gridColumn: element.xpos,
                 borderColor: colorMap[element.category],
+                backgroundColor: colorMap[element.category],
+                // color: colorMap[element.category],
               }}
             >
               <strong>{element.symbol}</strong>

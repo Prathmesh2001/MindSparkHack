@@ -1,0 +1,107 @@
+.bg-home{
+    background-color: #000000;
+    // background-image: linear-gradient(147deg, #1d1d31 0%, #04619f 74%);
+    // background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+// background-image: linear-gradient(147deg, #923cb5 0%, #000000 74%);
+// background-image: linear-gradient(315deg, #ffcfdf 0%, #b0f3f1 74%);
+// background-image: linear-gradient(315deg, #6b0f1a 0%, #b91372 74%);
+background-image: linear-gradient(315deg, #06337a 10%, #06acda 74%);
+// background: url('/static/images/bg2.jpg');
+
+
+    background-size: 200%;
+    animation: gradient 5s infinite;
+    .home-page{
+        min-height: 100vh;
+        
+    }
+}
+@keyframes gradient{
+    0%{
+        background-position: (0% 0%);
+    }
+    50%{
+        background-position: (100% 100%);
+    }
+    100%{
+        background-position: (0% 0%);
+    }
+}
+
+.home-img{
+    position: absolute;
+    bottom: 0;
+    width: 100%;    
+}
+
+.choose{
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+}
+
+.glass{
+        /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.35);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10.3px);
+    -webkit-backdrop-filter: blur(8.3px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    width: 30rem;
+    height: 35rem;
+    margin: 2rem;
+    padding: 1rem;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: 'Comic Neue', cursive;
+    transition: all 0.3s ease-in;
+    overflow: hidden;
+    img, h3{
+        transition: all 0.3s ease-in-out;
+    }
+    .learn-links{
+        display: none;
+        text-decoration: none;
+        list-style-type: none;
+        
+        a,a:visited,a:active{
+            text-decoration: none;
+            color: #fff;
+            
+        }
+        li{
+            // transform: scale(2);
+            font-size: x-large;
+            margin: 2rem 0;
+            border-bottom: 2px solid #fff;
+        }
+    }
+}
+.glass:hover{
+    font-size: large;
+    box-shadow: 0 0 45px 3px rgba(0, 0, 0, 0.4);
+    position: relative;
+    h3{
+        transform: scale(1.5) translateY(1rem);
+    }
+    img{
+        transform-origin: 0 0;
+        transform: translateY(8rem) rotateZ(45deg) scale(1.2);
+    }
+    .learn-links{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: end;
+        padding-right: 1.5rem;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        top: 0;
+        left: 0;
+        z-index: 5;
+        
+    }
+}

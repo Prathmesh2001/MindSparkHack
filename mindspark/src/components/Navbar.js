@@ -8,6 +8,7 @@ function Navbar() {
         <div className="container-fluid">
           <div className="logo  px-5">
             <img src="/static/images/chem2.png" alt="logo" />
+            {/* <img src="/static/images/Logo.gif" alt="logo" /> */}
             <Link to='/' className="navbar-brand">EasyChemistry</Link>
           </div>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,6 +28,9 @@ function Navbar() {
               </li>
               <li className="nav-item">
                 <Link to='/bonding'>Chemical Bonding</Link>
+              </li>
+              <li className="nav-item">
+                <Link to='/Sample'>Boiling</Link>
               </li>
 
             </ul>

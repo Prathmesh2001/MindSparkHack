@@ -1,9 +1,13 @@
 import React from 'react'
 import data from "../PeriodicTableJSON.json"
+import CounterOne from "./CounterOne";
 
 export default function Sample() {
     return (
-        <div class="grid-container">
+        <div>
+        
+        <div class="body">
+
         <div class="wrapper">
         <div class="flame-wrapper">
             <div class="flame red"></div>
@@ -17,6 +21,11 @@ export default function Sample() {
         <div class="cup">
     </div>
     
+    </div>
+    <div className="body1">
+    <CounterOne/>
+            <br/>
+            </div>
     </div>
     
     )

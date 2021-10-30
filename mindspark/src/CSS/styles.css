@@ -55,49 +55,6 @@ body {
   margin: 0px;
 }
 
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  -webkit-animation: App-logo-spin infinite 20s linear;
-          animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@-webkit-keyframes App-logo-spin {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@keyframes App-logo-spin {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
 .wrapper {
   width: 100%;
   min-height: 800px;
@@ -168,8 +125,8 @@ body {
   position: absolute;
   -webkit-animation: flicker 3ms ease-in infinite;
           animation: flicker 3ms ease-in infinite;
-  bottom: 0;
-  left: 50%;
+  bottom: 30%;
+  left: 47%;
 }
 
 .flame {
@@ -234,54 +191,111 @@ body {
   }
 }
 
-.grid-container {
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: "header" "main" "footer";
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  -ms-grid-rows: 5rem 1fr 5rem;
-      grid-template-rows: 5rem 1fr 5rem;
-  height: 100%;
+.body {
+  min-height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #f8f8f8;
+}
+
+input {
+  border: none;
+  border-bottom: 8px solid #666;
+  font-size: 24px;
+  padding: px 100px;
+}
+
+.count-wrap {
+  background: #9e3131;
+  border-radius: 4px;
+  padding: 10px 20px;
+  display: inline-block;
+  color: #fff;
+  font-size: 24px;
+}
+
+button {
+  font-size: 20px;
+  padding: 4px 20px;
+}
+
+label {
+  display: block;
+}
+
+.body1 {
+  min-height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #f8f8f8;
 }
 
 .cup {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 150px;
-  height: 180px;
+  position: relative;
+  background: burlywood;
   border: 6px solid #262626;
   border-top: 2px solid transparent;
   border-radius: 15px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  background: url(https://image.ibb.co/fmHm66/wave.png);
-  background-position: 0px 350px;
-  background-repeat: repeat-x;
-  -webkit-animation: filling 10s ease-in-out infinite;
-          animation: filling 10s ease-in-out infinite;
-  -webkit-box-shadow: 0 0 0 6px #fff, 0 20px 35px black;
-          box-shadow: 0 0 0 6px #fff, 0 20px 35px black;
+  width: 150px;
+  height: 180px;
+  overflow: hidden;
 }
 
-@-webkit-keyframes filling {
-  50% {
-    background-position: 3000px 0px;
+.cup::before {
+  content: "FILL";
+  font-size: 2rem;
+}
+
+.cup::after {
+  content: "";
+  position: absolute;
+  height: 200%;
+  width: 200%;
+  bottom: 50%;
+  left: -50%;
+  background: #f8f8f8;
+  border-radius: 45%;
+  -webkit-animation: spin 30s ease-in-out;
+          animation: spin 30s ease-in-out;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: translateY(0) rotate(0deg);
+            transform: translateY(0) rotate(0deg);
   }
-  100% {
-    background-position: 6000px 350px;
+  70% {
+    -webkit-transform: translateY(-100%) rotate(500deg);
+            transform: translateY(-100%) rotate(500deg);
   }
 }
 
-@keyframes filling {
-  50% {
-    background-position: 3000px 0px;
+@keyframes spin {
+  0% {
+    -webkit-transform: translateY(0) rotate(0deg);
+            transform: translateY(0) rotate(0deg);
   }
-  100% {
-    background-position: 6000px 350px;
+  70% {
+    -webkit-transform: translateY(-100%) rotate(500deg);
+            transform: translateY(-100%) rotate(500deg);
   }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -54,8 +54,8 @@
 .flame-wrapper {
     position: absolute;
     animation: flicker 3ms ease-in infinite;
-    bottom: 0;
-    left: 50%;
+    bottom: 30%;
+    left: 47%;
 }
 .flame {
     bottom: 0;
@@ -73,13 +73,40 @@
     100% {transform: rotate(1deg);}
 }
 
-.grid-container{
-    display: grid;
-    grid-template-areas: 
-    "header"
-    "main"
-    "footer";
-    grid-template-columns: 1fr;
-    grid-template-rows: 5rem 1fr 5rem;
-    height: 100%;
+.body{
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8f8f8;
+  }
+input{
+    border:none;
+    border-bottom: 8px solid #666;
+    font-size: 24px;
+    padding: px 100px;
+}
+.count-wrap{
+    background:rgb(158, 49, 49);
+    border-radius: 4px;
+    padding:10px 20px;
+    display: inline-block;
+    color: #fff;
+    font-size: 24px;
+}
+
+button{
+    font-size: 20px;
+    padding: 4px 20px;
+}
+label{
+    display: block;
+}
+
+.body1{
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8f8f8;
   }

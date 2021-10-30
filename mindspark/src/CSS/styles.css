@@ -97,4 +97,12 @@ body {
             transform: rotate(360deg);
   }
 }
+
+.img-container {
+  border: 2px solid red;
+}
+
+.img-container img {
+  width: 100%;
+}
 /*# sourceMappingURL=styles.css.map */

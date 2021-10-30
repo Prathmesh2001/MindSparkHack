@@ -47,8 +47,6 @@ body {
 }
 
 .Quizland {
-  width: 50px;
-  height: 50px;
   background-color: aquamarine;
   border: solid black;
   border-radius: 50%;
@@ -156,6 +154,19 @@ body {
 
 .cardwidth {
   width: 18rem;
+}
+
+.noHover {
+  pointer-events: none;
+}
+
+.giphy-embed {
+  width: 100px;
+  height: 1000px;
+}
+
+.elementback {
+  background-color: #777777;
 }
 
 .App {

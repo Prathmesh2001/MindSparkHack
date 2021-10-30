@@ -3,7 +3,7 @@ import { Link, useParams } from 'react-router-dom'
 // import { useSpring, animated } from 'react-spring'
 function Quiz(props) {
     const {name} = useParams();
-    const myQuiz = [1, 2, 3, 4, 5];
+    const myQuiz = [9, 10, 11, 14, 15];
     const handle_click=()=>{
 
     }

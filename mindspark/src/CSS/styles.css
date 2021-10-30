@@ -323,6 +323,102 @@ body {
   margin: 0px;
 }
 
+.photorow {
+  height: 500px;
+}
+
+.photocol {
+  border: 2px solid red;
+}
+
+.output {
+  border: 2px solid grey;
+  width: 400px;
+  height: 180px;
+}
+
+.rays {
+  height: 300px;
+  position: relative;
+  border: 2px solid green;
+}
+
+.electron_element {
+  height: 200px;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[15];
+      grid-template-columns: repeat(15, 1fr);
+  border: 2px solid grey;
+}
+
+.electrons {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #7d7d7d;
+}
+
+.bi-brightness-high {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.arrowup1 {
+  position: absolute;
+  top: 100px;
+  left: 50px;
+}
+
+.arrowup2 {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+}
+
+.arrowup3 {
+  position: absolute;
+  top: 100px;
+  left: 150px;
+}
+
+.arrowdown1 {
+  position: absolute;
+  top: 300px;
+  left: 400px;
+}
+
+.arrowdown2 {
+  position: absolute;
+  top: 300px;
+  left: 450px;
+}
+
+.arrowdown3 {
+  position: absolute;
+  top: 300px;
+  left: 500px;
+}
+
+.cardwidth {
+  width: 18rem;
+}
+
+.noHover {
+  pointer-events: none;
+}
+
+.giphy-embed {
+  width: 100px;
+  height: 1000px;
+}
+
+.elementback {
+  background-color: #777777;
+}
+
 .App {
   text-align: center;
 }
@@ -448,8 +544,8 @@ body {
   position: absolute;
   -webkit-animation: flicker 3ms ease-in infinite;
           animation: flicker 3ms ease-in infinite;
-  bottom: 0;
-  left: 50%;
+  bottom: 30%;
+  left: 47%;
 }
 
 .flame {
@@ -514,67 +610,112 @@ body {
   }
 }
 
-.grid-container {
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: "header" "main" "footer";
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  -ms-grid-rows: 5rem 1fr 5rem;
-      grid-template-rows: 5rem 1fr 5rem;
-  height: 100%;
+.body {
+  min-height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #f8f8f8;
+}
+
+input {
+  border: none;
+  border-bottom: 8px solid #666;
+  font-size: 24px;
+  padding: px 100px;
+}
+
+.count-wrap {
+  background: #9e3131;
+  border-radius: 4px;
+  padding: 10px 20px;
+  display: inline-block;
+  color: #fff;
+  font-size: 24px;
+}
+
+button {
+  font-size: 20px;
+  padding: 4px 20px;
+}
+
+label {
+  display: block;
+}
+
+.body1 {
+  min-height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #f8f8f8;
 }
 
 .cup {
-  width: 150px;
-  height: 180px;
+  position: relative;
+  background: burlywood;
   border: 6px solid #262626;
   border-top: 2px solid transparent;
   border-radius: 15px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  background: url(https://image.ibb.co/fmHm66/wave.png);
-  background-position: 0px 350px;
-  background-repeat: repeat-x;
-  -webkit-animation: filling 10s ease-in-out infinite;
-          animation: filling 10s ease-in-out infinite;
-  -webkit-box-shadow: 0 0 0 6px #fff, 0 20px 35px black;
-          box-shadow: 0 0 0 6px #fff, 0 20px 35px black;
+  width: 150px;
+  height: 180px;
+  overflow: hidden;
 }
 
-@-webkit-keyframes filling {
-  50% {
-    background-position: 3000px 0px;
+.cup::before {
+  content: "FILL";
+  font-size: 2rem;
+}
+
+.cup::after {
+  content: "";
+  position: absolute;
+  height: 200%;
+  width: 200%;
+  bottom: 50%;
+  left: -50%;
+  background: #f8f8f8;
+  border-radius: 45%;
+  -webkit-animation: spin 30s ease-in-out;
+          animation: spin 30s ease-in-out;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: translateY(0) rotate(0deg);
+            transform: translateY(0) rotate(0deg);
   }
-  100% {
-    background-position: 6000px 350px;
+  70% {
+    -webkit-transform: translateY(-100%) rotate(500deg);
+            transform: translateY(-100%) rotate(500deg);
   }
 }
 
-@keyframes filling {
-  50% {
-    background-position: 3000px 0px;
+@keyframes spin {
+  0% {
+    -webkit-transform: translateY(0) rotate(0deg);
+            transform: translateY(0) rotate(0deg);
   }
-  100% {
-    background-position: 6000px 350px;
+  70% {
+    -webkit-transform: translateY(-100%) rotate(500deg);
+            transform: translateY(-100%) rotate(500deg);
   }
-}
-
-.flask img {
-  -webkit-filter: hue-rotate(200deg);
-          filter: hue-rotate(200deg);
-}
-
-.fire-img {
-  width: 5rem;
-  -webkit-transform: translateY(-50px);
-          transform: translateY(-50px);
-}
-
-.fire-img img {
-  width: 100%;
-  -webkit-filter: sepia(95%);
-          filter: sepia(95%);
 }
 
 /* ########################## Footer ############################## */

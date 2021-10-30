@@ -11,6 +11,7 @@ import './CSS/styles.css';
 import './CSS/bootstrap.min.css';
 import PeriodicTable from "./components/PeriodicTable"
 import Photoelectric from './components/Photoelectric';
+import Element from "./components/Element"
 import Home from './components/Home';
 import Bonding from './components/Bonding';
 import Sample from './components/Sample';
@@ -36,6 +37,10 @@ function App() {
 
           <Route exact path="/photoElectric">
             <Photoelectric />
+          </Route>
+
+          <Route exact path="/element">
+            <Element />
           </Route>
 
           <Route exact path="/bonding">

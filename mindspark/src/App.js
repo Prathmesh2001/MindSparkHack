@@ -1,5 +1,12 @@
 
 import React, { Component } from 'react';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+
+} from "react-router-dom";
+
 import './CSS/styles.css';
 import './CSS/bootstrap.min.css';
 import Quiz from './components/Quiz';
@@ -9,37 +16,68 @@ import {
   Route,
   useHistory,
   Redirect,
-
 } from "react-router-dom";
+import Photoelectric from './components/Photoelectric';
+import PeriodicTable from "./components/PeriodicTable"
+import Element from "./components/Element"
+import Home from './components/Home';
+import Bonding from './components/Bonding';
+import Sample from './components/Sample';
+import Navbar from './components/Navbar';
+// import './CSS/bootstrap.bundle.js';
+
 import Quizcont from './components/Quizcont';
 // import PeriodicTable from '/components/PeriodicTable'
 // import './CSS/bootstrap.bundle.js';
 
-class App extends Component {
-  ele_num = 5;
-  render() {
-    return (
-      <div>
-        <Router>
-          <div>
-            <Switch>
-              <Route exact path = "/Quiz">
-                <Quiz element_no = {this.ele_num}/>
-              </Route>
-              <Route exact path = "/">
-                <h1> Home </h1>
-              </Route>
-              <Route exact path="/quizcont/:id">
-                <Quizcont/>
-              </Route>
-            </Switch>
-            
-          </div>
-        </Router>
-        
-      </div>
-    );
-  }
+function App() {
+  return (
+    <div className="App">
+
+      <Router>
+        <Navbar />
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+
+          <Route exact path="/periodicTable">
+            <PeriodicTable />
+          </Route>
+
+          <Route exact path="/photoElectric">
+            <Photoelectric />
+          </Route>
+
+          <Route exact path="/element">
+            <Element />
+          </Route>
+
+          <Route exact path="/bonding">
+            <Bonding />
+          </Route>
+
+
+          <Route exact path="/Sample">
+
+            <Sample />
+          </Route>
+          
+          <Route exact path = "/Quiz">
+            <Quiz element_no = {this.ele_num}/>
+          </Route>
+          
+          <Route exact path="/quizcont/:id">
+            <Quizcont/>
+          </Route>
+          
+          <Route>404</Route>
+        </Switch>
+      </Router>
+
+    </div>
+
+  );
 }
 
 

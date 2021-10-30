@@ -25,9 +25,7 @@ function App() {
     <div className="App">
     <header className="header">
       <div className="brand">
-        {/* <button onclick="openMenu()">
-          &#9776;
-        </button> */}
+        
         <Link to="/">EasyChemistry</Link>
       </div>
       <div className="header-links">

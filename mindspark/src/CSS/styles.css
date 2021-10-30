@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: gray;
+}
+
+.rot {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.main_div {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.track {
+  border: solid 2px;
+  /* margin : 50px; */
+  border-radius: 50%;
+  position: absolute;
+}
+
+#out1 {
+  width: 200px;
+  height: 200px;
+  /* margin: 0 auto; */
+}
+
+#out2 {
+  height: 150px;
+  width: 150px;
+  translate: 50px;
+}
+
+.obj {
+  width: 20px;
+  position: absolute;
+  height: 20px;
+  background-color: gray;
+  border-radius: 50%;
+  margin: 0px;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,5 +1,6 @@
-import React from 'react';
-import './App.css';
+
+import React, { Component } from 'react';
+import './CSS/styles.css';
 import './CSS/bootstrap.min.css';
 import PeriodicTable from "./components/PeriodicTable"
 // import './CSS/bootstrap.bundle.js';

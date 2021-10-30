@@ -6,6 +6,10 @@ body {
   background-color: gray;
 }
 
+.card {
+  padding: 0 !important;
+}
+
 .rot {
   width: 100px;
   height: 100px;
@@ -96,6 +100,14 @@ body {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
   }
+}
+
+.bonding-page {
+  min-height: 100vh;
+}
+
+.card-header {
+  padding: 1rem 0;
 }
 
 .img-container img {

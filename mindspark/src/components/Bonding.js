@@ -2,15 +2,15 @@ import React from 'react'
 
 function Bonding() {
     return (
-        <div>
-            <div className="container my-5">
+        <div className='bonding-page bg-secondary py-5'>
+            <div className="container ">
                 <div className="bonding-info-div">
 
 
                     <h3 className='card py-3'>  Chemical Bonding</h3>
                     <div className="bonding-types row my-3">
                         <div className='col-6 card'>
-                            <div className="card-header  py-3">
+                            <div className="card-header">
                                 <h4>Ionic Bond</h4>
                             </div>
                             <div className="card-body">
@@ -24,7 +24,7 @@ function Bonding() {
                         </div>
 
                         <div className='col-6 card '>
-                            <div className="card-header py-3">
+                            <div className="card-header">
                                 <h4>Covalent Bond</h4>
                             </div>
                             <div className="card-body">

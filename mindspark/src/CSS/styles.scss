@@ -6,6 +6,10 @@ body{
     background-color: $primary;
 }
 
+.card{
+    padding: 0 !important;
+}
+
 @import "atoms";
 @import "dis1";
 @import "bonding";

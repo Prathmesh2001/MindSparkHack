@@ -11,15 +11,26 @@ export default function Element() {
             <div className="container">
                 <div className="row my-3">
                     <div className="col-4">
-                        <iframe src="https://giphy.com/embed/ZZqrogB7mIcppuwJc7" width="480" height="480" frameBorder="0" className="giphy-embed noHover" allowFullScreen></iframe>
+                        <iframe src="https://giphy.com/embed/ZZqrogB7mIcppuwJc7" frameBorder="0" className="giphy-embed noHover" allowFullScreen></iframe>
                     </div>
                     <div className="col-8">
+                        <h5>{elem.number}</h5>
                         <h1>{elem.symbol}</h1>
                         <h5>{elem.name}</h5>
-                        
+                        <h6>{elem.category}</h6>
+                        <a href={elem.source}>{elem.name} element Page</a>
+                        <p>{elem.summary}</p>
+                        <h6><b>Appearance:</b> {elem.appearance}</h6>
+                        <h6><b>Atomic Mass:</b> {elem.atomic_mass}</h6>
+                        <h6><b>Boiling Point:</b> {elem.boil}</h6>
+                        <h6><b>Density:</b> {elem.density}</h6>
+                        <h6><b>Melting Point:</b> {elem.melt}</h6>
+                        <h6><b>Molar Heat:</b> {elem.molar_heat}</h6>
                     </div>
                 </div>
-                <div className="row d-flex justify-content-between">
+                <br />
+                <hr />
+                <div className="row my-3 d-flex justify-content-center">
                     <div className="col-4">
                         <div className="card cardwidth">
                             <img src="https://www.scienceabc.com/wp-content/uploads/ext-www.scienceabc.com/wp-content/uploads/2017/05/Photoelectric-Effect.jpg-.jpg" className="card-img-top" alt="..."/>

@@ -1,10 +1,14 @@
+
+.periodic-page{
+  min-height: 120vh;
+}
 .periodic-table {
   display: grid;
   grid-template-columns: repeat(18, 64px);
   grid-template-rows: repeat(10, 64px);
   grid-gap: 4px;
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
 }

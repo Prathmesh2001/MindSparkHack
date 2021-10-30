@@ -6,6 +6,16 @@ body{
     background-color: $primary;
 }
 
+.card{
+    padding: 0 !important;
+}
+
+
+@import 'navbar';
 @import "atoms";
+@import "photoelectric";
+@import "element";
+@import "dis1";
+@import "bonding";
 @import "flame";
 @import "water";

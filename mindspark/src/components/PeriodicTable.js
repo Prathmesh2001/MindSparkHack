@@ -13,6 +13,7 @@ const colorMap = {
   metalloid: "#73D2DE",
 };
 
+
 const PeriodicTable = () => {
   return (
     <div className="periodic-table">

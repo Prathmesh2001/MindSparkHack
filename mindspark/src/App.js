@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
 import './CSS/bootstrap.min.css';
 import PeriodicTable from "./components/PeriodicTable"
@@ -13,5 +13,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App;

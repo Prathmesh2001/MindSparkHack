@@ -2,10 +2,12 @@ import React from 'react'
 
 function Home() {
     return (
-        <div>
-            Home
+        <div className='home-page'>
+            <div className="home-img">
+                <img src="/static/images/bg-chem.png" alt="background image" />
+            </div>
         </div>
-        
+
     )
 }
 

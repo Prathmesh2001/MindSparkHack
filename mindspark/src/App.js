@@ -15,6 +15,7 @@ import Home from './components/Home';
 import Bonding from './components/Bonding';
 import Sample from './components/Sample';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 // import './CSS/bootstrap.bundle.js';
 
 
@@ -49,6 +50,7 @@ function App() {
 
           <Route>404</Route>
         </Switch>
+        <Footer/>
       </Router>
 
     </div>

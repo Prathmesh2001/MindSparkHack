@@ -9,3 +9,22 @@
         }
     }
 }
+
+.logo{
+    position: relative;
+    display: flex;
+    align-items: center;
+    img{
+        width: 3rem;
+    }
+}
+
+.home-page{
+    min-height: 100vh;
+}
+
+.home-img{
+    position: absolute;
+    bottom: 0;
+    width: 100%;    
+}

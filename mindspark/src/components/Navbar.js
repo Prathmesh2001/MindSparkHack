@@ -6,7 +6,10 @@ function Navbar() {
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid">
-          <a className="navbar-brand px-5" href="#">EasyChemistry</a>
+          <div className="logo  px-5">
+            <img src="/static/images/chem2.png" alt="logo" />
+            <Link to='/' className="navbar-brand">EasyChemistry</Link>
+          </div>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>

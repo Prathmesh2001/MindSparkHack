@@ -3,7 +3,7 @@ body {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-color: gray;
+  background-color: #333446;
 }
 
 .card {
@@ -16,6 +16,30 @@ body {
 
 .navbar .nav-item a, .navbar .nav-item a:visited, .navbar .nav-item a:active {
   text-decoration: none;
+}
+
+.logo {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo img {
+  width: 3rem;
+}
+
+.home-page {
+  min-height: 100vh;
+}
+
+.home-img {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 .rot {
@@ -307,5 +331,71 @@ body {
   100% {
     background-position: 6000px 350px;
   }
+}
+
+/* ########################## Footer ############################## */
+footer {
+  background-color: #292b2c;
+  color: #ffffff;
+  padding: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social-media-links {
+  /* border: 1px solid red; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 20rem;
+}
+
+.social-media-links i {
+  color: #ffffff;
+}
+
+.media-link {
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.media-link, .fab {
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+.fab {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.media-link:hover .fab {
+  -webkit-transform: scale(2);
+          transform: scale(2);
 }
 /*# sourceMappingURL=styles.css.map */

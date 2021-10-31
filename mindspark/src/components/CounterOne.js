@@ -1,13 +1,18 @@
 import React,{ Component } from 'react'
 import data from "../PeriodicTableJSON.json"
+import Sample from './Sample';
 
 class CounterOne extends Component{
+    
     constructor(props){
         super(props);
+        var storedClicks = 0;
         this.state={
             count:0,
-        }
+            name:1000,
+        }        
     }
+    
     countUp=()=>{
         this.interval=setInterval(()=>{
         this.setState(prevState=>({
@@ -15,6 +20,7 @@ class CounterOne extends Component{
         }));
     },10)
     };
+    
 
     reset=()=>{
         this.clearInterval();
@@ -23,12 +29,13 @@ class CounterOne extends Component{
         }));
     };
     onChangeStartingPoint=()=>{};
-
+    
     clearInterval=()=>{
         clearInterval(this.interval)
     }
     
-    render(){
+    render(props){
+        const boil={props};
     return (
         <div>
             <h1><b>Temperature</b></h1>
@@ -38,12 +45,14 @@ class CounterOne extends Component{
             <input onChange={this.onChangeStartingPoint}value=
             {this.state.count}/>
             </h4>
+            value2={this.props.name}
             <br/>
             <br/>
             <button onClick={this.countUp}>CountUP</button>
+            <p> Boiling:{this.props.name}</p>
             
+    
             <button onClick={this.reset}>Reset</button>
-            
         </div>
     )
     }

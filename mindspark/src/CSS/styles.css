@@ -71,6 +71,15 @@ body {
           box-shadow: 0 0 50px 2px rgba(0, 0, 0, 0.3);
 }
 
+.Quizland a {
+  text-decoration: none;
+  color: black;
+  font-size: 2rem;
+  -webkit-transform: translateX(-2rem);
+          transform: translateX(-2rem);
+  position: absolute;
+}
+
 .navbar {
   z-index: 3;
   border-bottom: 1px solid #7d7d7d;
@@ -360,8 +369,8 @@ body {
 }
 
 #qtype0 {
-  -webkit-transform: translate(384px, 127px);
-          transform: translate(384px, 127px);
+  -webkit-transform: translate(444px, 127px);
+          transform: translate(444px, 127px);
 }
 
 #qtype1 {

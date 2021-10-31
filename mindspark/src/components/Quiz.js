@@ -12,16 +12,16 @@ function Quiz() {
     }
     return (
         <div className="container-fluid abc">
-            <div className="m-3">
+            <div className="p-3">
 
                 <img src="/static/images/empislnd.png" style={{position:"absolute", zIndex:"-100", top:"50%", left:"50%", transform:"translate(-50%, -50%)"}} className="w-50"/>
                 <img src="/static/images/path3.png" style={{position:"absolute", zIndex:"-10", top:"50%", left:"50%", width:"700px", transform:"translate(-50%, -50%)"}}/>
                 {
-                    myQuiz.map((elem) => {
+                    myQuiz.map((elem,i) => {
                         console.log(elem)
                         return (
                             <div className="Quizland" id={"qtype" + elem}>
-                                <Link to={"/quizcont/" + elem}> <img src="/static/images/circle.png"/></Link>
+                                <Link to={"/quizcont/" + elem}> <img src="/static/images/circle.png"/>{i}</Link>
                             </div>
                         )
                     }

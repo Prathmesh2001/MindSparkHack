@@ -1,17 +1,53 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+
 @import "variable";
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     background-color: $primary;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .card{
     padding: 0 !important;
 }
 
+.center-object-vertical{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.center-object-horizontal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quiz-question-page,
+.element-page
+{
+    min-height: 100vh;
+}
+
+.sample-page{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+    .card{
+        border: 1px solid #ccc;
+        width: 60rem;
+        
+    }
+}
+
 
 @import 'navbar';
+@import 'home';
+@import 'periodic';
 @import "atoms";
 @import "photoelectric";
 @import "element";
@@ -19,3 +55,4 @@ body{
 @import "bonding";
 @import "flame";
 @import "water";
+@import 'footer';

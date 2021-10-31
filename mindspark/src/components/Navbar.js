@@ -6,7 +6,11 @@ function Navbar() {
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid">
-          <a className="navbar-brand px-5" href="#">EasyChemistry</a>
+          <div className="logo  px-5">
+            <img src="/static/images/chem2.png" alt="logo" />
+            {/* <img src="/static/images/Logo.gif" alt="logo" /> */}
+            <Link to='/' className="navbar-brand">EasyChemistry</Link>
+          </div>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
@@ -19,12 +23,18 @@ function Navbar() {
               <li className="nav-item">
                 <Link to="/periodicTable">Periodic Table</Link>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <Link to="/photoElectric">Photo Electric</Link>
-              </li>
+              </li> */}
               <li className="nav-item">
                 <Link to='/bonding'>Chemical Bonding</Link>
               </li>
+              <li className="nav-item">
+                <Link to='/quiz'>Quiz</Link>
+              </li>
+              {/* <li className="nav-item">
+                <Link to='/Sample'>Boiling</Link>
+              </li> */}
 
             </ul>
 

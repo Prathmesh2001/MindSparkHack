@@ -11,13 +11,15 @@ import {
   useHistory,
   Redirect,
 } from "react-router-dom";
-import Photoelectric from './components/Photoelectric';
+
 import PeriodicTable from "./components/PeriodicTable"
+import Photoelectric from './components/Photoelectric';
 import Element from "./components/Element"
 import Home from './components/Home';
 import Bonding from './components/Bonding';
 import Sample from './components/Sample';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 // import './CSS/bootstrap.bundle.js';
 
 import Quizcont from './components/Quizcont';
@@ -53,7 +55,6 @@ function App() {
 
 
           <Route exact path="/Sample">
-
             <Sample />
           </Route>
           
@@ -67,6 +68,7 @@ function App() {
           
           <Route>404</Route>
         </Switch>
+        <Footer/>
       </Router>
 
     </div>

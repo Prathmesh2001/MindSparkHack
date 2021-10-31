@@ -6,7 +6,7 @@ function Footer() {
         <footer className="footer">
 		
 		<div className="copyrights">
-			<p>&copy; All rights Reserved. EventMania</p>
+			<p>&copy; All rights Reserved. EasyChemistry</p>
 		</div>
 		<div className="social-media-links">
 			<div className="media-link">

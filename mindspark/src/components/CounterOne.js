@@ -85,9 +85,9 @@ class CounterOne extends Component{
             <br/>
             <br/>
             <div>
-            <button onClick={this.countUp}>CountUP</button>
+            <button className='btn btn-danger mx-3' onClick={this.countUp}>Start Heating</button>
             {/* <p> Boiling:{this.props.name}</p> */}
-            <button onClick={this.reset}>Reset</button>
+            <button className='btn btn-primary mx-3' onClick={this.reset}>Reset</button>
             </div>
             <br/>
 

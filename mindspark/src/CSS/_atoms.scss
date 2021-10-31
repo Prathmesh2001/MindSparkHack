@@ -21,11 +21,27 @@
 }
 
 .Quizland{
-    width: 80px;
-    height: 80px;
-    background-color: aquamarine;
-    border: solid black;
-    border-radius: 50%;
+    position: absolute;
+}
+
+#qtype0{
+    transform: translate(384px, 127px);
+}
+
+#qtype1{
+    transform: translate(581px, 359px);
+}
+
+#qtype2{
+    transform: translate(732px, 335px);
+}
+
+#qtype3{
+    transform: translate(862px, 127px);
+}
+
+#qtype4{
+    transform: translate(1010px, 262px);
 }
 
 #out1{

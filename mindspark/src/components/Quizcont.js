@@ -92,15 +92,16 @@ function Quizcont() {
                 </button>
             </div>
         </div>
+    
     )
 
-    const res_card = (
-        <div className="card text-center">
-            <div className="card-body">
-                <h5 className="card-title">You've completed the Quiz!</h5>
-                <p className="card-text">You got, {score} out of 10</p>
-                <Link className="btn btn-primary" to="/">Go somewhere</Link>
-            </div>
+  const res_card = (
+      <div className="card text-center">
+        <div className="card-body">
+            <h5 className="card-title">You've completed the Quiz!</h5>
+            <p className="card-text">You got, {score} out of 10</p>
+            <Link className="btn btn-primary" to="/">Home</Link>
+        </div>
         </div>
     )
 

@@ -1,15 +1,22 @@
 import React, { useState } from 'react'
-
+import data from "../elementGIF.json"
 
 export default function Photoelectric() {
 
     const h = 6.626 ** 10 - 34;
     const [freq, setfreq] = useState(0)
     const [output, setoutput] = useState([])
+    const [elem, setelem] = useState(JSON.parse(localStorage.getItem("el")))
+    var thresh=100
+
+    if(data.gif.length>=elem.number&&data.gif[elem.number-1].id==elem.number)
+    {
+        thresh=data.gif[elem.number-1].freq
+    }
 
     const calKE = () => {
-        let k = h * freq - h * 5;
-        setoutput([<div>KE = hv - hv<sub>0</sub></div>, <div>KE = 6.626 x 10<sup>-34</sup> x {freq} - 6.626 x 10<sup>-34</sup> x 5</div>, <div>KE = {k} J</div>])
+        let k = h * freq - h * thresh;
+        setoutput([<div>KE = hv - hv<sub>0</sub></div>, <div>KE = 6.626 x 10<sup>-34</sup> x {freq} - 6.626 x 10<sup>-34</sup> x {thresh}</div>, <div>KE = {k} J</div>])
         // output.push(<div>KE = hv - hv<sub>0</sub></div>);
         // output.push(<div>KE = 6.626 x 10<sup>-34</sup>x{freq} - 6.626 x 10<sup>-34</sup>x5</div>)
         // output.push(<div>KE = {KE}</div>)
@@ -34,6 +41,7 @@ export default function Photoelectric() {
                         <h4 className="text-center">Einstiens Photoelectric Equation</h4><hr />
                         <h5 className="text-center">K.E=hv-hv<sub>0</sub></h5>
                         <h6 className="text-center">Planck's constant(h) = 6.626 x 10<sup>-34</sup> J Hz<sup>-1</sup></h6>
+                        <h6 className="text-center">Threshold Frequency v<sub>0</sub> of {elem.name} = {thresh} Hz</h6>
                         <br />
                         {/* <h6 className="text-center">Input</h6> */}
                         <div className="mb-3">

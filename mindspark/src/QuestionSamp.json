@@ -1,111 +1,111 @@
 [  
     {
         "ind": 1,
-        "que": "dsan",
+        "que": "Which of the following does NOT depend on the attraction of the bonding pair towards the nucleus?",
         "options":[
-            "hello",
-            "hallo",
-            "bonjouur",
-            "some"
+            "The repulsion by the electrons in the same valence shell",
+            "The amount of shielding by inner shell electrons",
+            "The distance from the nucleus",
+            "The number of protons in the nucleus"
         ],
-        "correct": 1
+        "correct": 0
     },
     {
         "ind": 2,
-        "que": "dsan2",
+        "que": "How many element groups are there?",
         "options":[
-            "hello00000000",
-            "halloskdb",
-            "bonjouurjskbcjn",
-            "some"
+            "7",
+            "11",
+            "16",
+            "8"
         ],
         "correct": 2
     },   
     {
         "ind": 3,
-        "que": "dsan3",
+        "que": "The symbol Au stands for what element?",
         "options":[
-            "hello",
-            "hallo",
-            "bonjouur",
-            "some"
+            "Gold",
+            "Silver",
+            "Copper",
+            "Tin"
         ],
         "correct": 3
     },  
     {
         "ind": 4,
-        "que": "dsan",
+        "que": "What is the atomic number for helium?",
         "options":[
-            "hello",
-            "hallo",
-            "bonjouur",
-            "some"
+            "1",
+            "2",
+            "4",
+            "5"
         ],
         "correct": 0
     },  
     {
         "ind": 5,
-        "que": "dsan",
+        "que": "What is the symbol for tin?",
         "options":[
-            "hello",
-            "hallo",
-            "bonjouur",
-            "some"
+            "Sn",
+            "Se",
+            "Sg",
+            "Sr"
         ],
         "correct": 3
     },  
     {
         "ind": 6,
-        "que": "dsan",
+        "que": "The element germanium is in what element group?",
         "options":[
-            "hello",
-            "hallo",
-            "bonjouur",
-            "some"
+            "Basic Meta",
+            "Non-Metal",
+            "Rare Earth",
+            "Semi-Metal"
         ],
         "correct": 2
     },  
     {
         "ind": 7,
-        "que": "dsan",
+        "que": "The element Rubidium is in what element group?",
         "options":[
-            "hello",
-            "hallo",
-            "bonjouur",
-            "some"
+            "Alkaline earth",
+            "Basic metal",
+            "Alkali metal",
+            "Transition metal"
         ],
         "correct": 3
     },  
     {
         "ind": 8,
-        "que": "dsan",
+        "que": "What is the symbol for manganese?",
         "options":[
-            "hello",
-            "hallo",
-            "bonjouur",
-            "some"
+            "Mo",
+            "Mg",
+            "Mt",
+            "Mn"
         ],
         "correct": 0
     },  
     {
         "ind": 9,
-        "que": "dsan",
+        "que": "What is the symbol for phosphorus?",
         "options":[
-            "hello",
-            "hallo",
-            "bonjouur",
-            "some"
+            "Po",
+            "P",
+            "Pb",
+            "Pu"
         ],
         "correct": 0
     },  
     {
         "ind": 10,
-        "que": "dsan",
+        "que": "The element neon is from what group?",
         "options":[
-            "hello",
-            "hallo",
-            "bonjouur",
-            "some"
+            "Halogen",
+            "Rare Earth",
+            "Noble Gas",
+            "Non-Metal"
         ],
         "correct": 3
     }  ,  

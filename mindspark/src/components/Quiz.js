@@ -11,7 +11,7 @@ function Quiz() {
         borderRadius: "50%",
     }
     return (
-        <div className="container-fluid">
+        <div className="container-fluid abc">
             <div className="m-3">
 
                 <img src="/static/images/empislnd.png" style={{position:"absolute", zIndex:"-100", top:"50%", left:"50%", transform:"translate(-50%, -50%)"}} className="w-50"/>

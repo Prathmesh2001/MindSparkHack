@@ -2,19 +2,53 @@
     "gif":[
         {
             "id":1,
-            "link":"https://giphy.com/embed/VbQk7UzSrryWjuF7Yb"
+            "link":"https://giphy.com/embed/VbQk7UzSrryWjuF7Yb",
+            "freq":0
         },
         {
             "id":2,
-            "link":"https://giphy.com/embed/YPEXWPopZcBKiEbWgq"
+            "link":"https://giphy.com/embed/YPEXWPopZcBKiEbWgq",
+            "freq":0
         },
         {
             "id":3,
-            "link":"https://giphy.com/embed/j79EOPQranA7GaBkpT"
+            "link":"https://giphy.com/embed/j79EOPQranA7GaBkpT",
+            "freq":31
         },
         {
             "id":4,
-            "link":"https://giphy.com/embed/W2KU5PKZJHnbF4pwc2"
+            "link":"https://wellnessadvocate.com/images/elements/Beryllium_Orbit.gif",
+            "freq":52
+        },
+        {
+            "id":5,
+            "link":"https://giphy.com/embed/Kg1ttGFEuMc9QvuYVa",
+            "freq":28
+        },
+        {
+            "id":6,
+            "link":"https://giphy.com/embed/Z8k6qo0AVIsPdROQNd",
+            "freq":20
+        },
+        {
+            "id":7,
+            "link":"https://lh3.googleusercontent.com/proxy/wVu6am8DFYNmg6KKuRsmzNU7gmSM3ar7kPmUd4uQ2dt8Lveq3dP9T4rAfOh-WeiJ73R3J_tR32ZFIbN9uLQszg7cWI6fnb-y7XMHr-1YEtJuj7n4OyI87EClvfU75epJLkERyQ",
+            "freq":20
+        },
+        {
+            "id":8,
+            "link":"https://giphy.com/embed/W2KU5PKZJHnbF4pwc2",
+            "freq":80
+        },
+        {
+            "id":9,
+            "link":"https://giphy.com/embed/Xf1zV6oOrMs0vMDz7V",
+            "freq":78
+        },
+        {
+            "id":10,
+            "link":"https://giphy.com/embed/nqh2NNyuwGMhjUK17h",
+            "freq":94
         }
         
     ]

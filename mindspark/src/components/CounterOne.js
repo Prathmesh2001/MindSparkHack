@@ -9,16 +9,30 @@ class CounterOne extends Component{
         var storedClicks = 0;
         this.state={
             count:0,
-            name:1000,
+            upperlimit:10,
         }        
     }
-    
+     
     countUp=()=>{
+ 
+        this.clearInterval();
         this.interval=setInterval(()=>{
+            if(this.props.upperlimit && this.state.count <= this.props.upperlimit)
+            {
         this.setState(prevState=>({
             count:parseFloat(prevState.count)+0.01,
         }));
-    },10)
+    }
+    else{
+        this.clearInterval();
+    }
+    },1)
+    // var x = document.getElementById("myDIV");
+    // if (x.display === "none") {
+    //   x.display = "block";
+    // } else {
+    //   x.display = "none";
+    // }
     };
     
 
@@ -28,7 +42,18 @@ class CounterOne extends Component{
             count:0,
         }));
     };
-    onChangeStartingPoint=()=>{};
+    onChangeStartingPoint=e=>{
+        this.clearInterval();
+        this.setState({
+            count:parseFloat(e.target.value),
+        });
+    };
+    onChangeLimitingPoint=e=>{
+        this.clearInterval();
+        this.setState({
+            upperlimit:parseFloat(e.target.value),
+        });
+    };
     
     clearInterval=()=>{
         clearInterval(this.interval)
@@ -38,21 +63,39 @@ class CounterOne extends Component{
         const boil={props};
     return (
         <div>
+        <div>
+            
             <h1><b>Temperature</b></h1>
             <br/>
-            
+            <div>
             <h4>
+
             <input onChange={this.onChangeStartingPoint}value=
             {this.state.count}/>
             </h4>
-            value2={this.props.name}
+            </div>
+            {/* <div>
+            <h4>
+            <input onChange={this.onChangeLimitingPoint}value=
+            {this.props.upperlimit}/>
+            </h4>
+            </div> */}
+
+            {/* value2={this.props.name} */}
             <br/>
             <br/>
+            <div>
             <button onClick={this.countUp}>CountUP</button>
-            <p> Boiling:{this.props.name}</p>
-            
-    
+            {/* <p> Boiling:{this.props.name}</p> */}
             <button onClick={this.reset}>Reset</button>
+            </div>
+            <br/>
+
+            
+        </div>
+        <div>
+
+        </div>
         </div>
     )
     }

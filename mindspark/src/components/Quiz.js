@@ -13,11 +13,11 @@ function Quiz() {
     return (
         <div className="container-fluid">
             {
-                myQuiz.map((elem) => {
+                myQuiz.map((elem,i) => {
                     console.log(elem)
                     return (
                         <div className="Quizland">
-                            <Link className="m-5" to={"/quizcont/" + elem}></Link>
+                            <Link className="m-5" to={"/quizcont/" + elem}>{i}</Link>
                         </div>
                     )
                 }

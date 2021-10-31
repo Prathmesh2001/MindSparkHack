@@ -3,13 +3,25 @@
 .navbar{
     z-index: 3;
     border-bottom: 1px solid $grey;
+    .navbar-nav{
+        // border: 1px solid red;
+        width: 80%;
+        display: flex;
+        justify-content: start;
+    }
     .nav-item{
-        padding: 0 1rem;
+        padding: 0 3rem;
 
         a,a:visited,a:active{
             text-decoration: none;
-            
+            color: #7ef8bf;
+            transition: all 0.3s;
         }
+
+    }
+    .nav-item a:hover{
+        color: $prim;
+        border-bottom: 2px solid $prim;
     }
 }
 

@@ -23,15 +23,18 @@ function Navbar() {
               <li className="nav-item">
                 <Link to="/periodicTable">Periodic Table</Link>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <Link to="/photoElectric">Photo Electric</Link>
-              </li>
+              </li> */}
               <li className="nav-item">
                 <Link to='/bonding'>Chemical Bonding</Link>
               </li>
               <li className="nav-item">
-                <Link to='/Sample'>Boiling</Link>
+                <Link to='/quiz'>Quiz</Link>
               </li>
+              {/* <li className="nav-item">
+                <Link to='/Sample'>Boiling</Link>
+              </li> */}
 
             </ul>
 

@@ -27,6 +27,12 @@ body{
     align-items: center;
 }
 
+.quiz-question-page,
+.element-page
+{
+    min-height: 100vh;
+}
+
 
 @import 'navbar';
 @import 'home';

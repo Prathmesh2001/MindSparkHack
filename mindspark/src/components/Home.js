@@ -14,9 +14,9 @@ function Home() {
                         <h3>Learn</h3>
                         <ul className="learn-links">
                             <li><Link to="/periodicTable">Periodic Table</Link></li>
-                            <li><Link to="/photoElectric">Photo Electric</Link></li>
+                            {/* <li><Link to="/photoElectric">Photo Electric</Link></li> */}
                             <li><Link to='/bonding'>Chemical Bonding</Link></li>
-                            <li><Link to='/Sample'>Boiling</Link></li>
+                            {/* <li><Link to='/Sample'>Boiling</Link></li> */}
                         </ul>
                         <div className="png">
                             <img src="/static/images/learn.png" alt="learn image" />
@@ -26,7 +26,8 @@ function Home() {
                         <h3>Test</h3>
                         <ul className="learn-links">
                             {/* <li><Link to="/periodicTable">Periodic Table</Link></li> */}
-                            Add test link here
+                            <li><Link to='/quiz'>Take Quiz</Link></li>
+                            <li><Link to='/#'>Race against Time</Link></li>
                         </ul>
                         <div className="png">
                             <img src="/static/images/test.png" alt="test image" />

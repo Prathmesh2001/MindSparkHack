@@ -1,16 +1,77 @@
+.element-page{
+    // background: url('/static/images/bg3.jpg');
+    background: url('/static/images/qbkls.png');
+}
+
+
 .cardwidth{
     width: 18rem;
+}
+
+.gif-in-me{
+    width: 30rem;
+    height: 30rem;
+    // border: 2px solid red;
+    // position: relative;
+    iframe, .giphy-embed{
+        width: 100%;
+        height: 100%;
+        // object-fit: fill;
+    }
+    z-index: 3;
 }
 
 .noHover{
     pointer-events: none;
 }
 
-.giphy-embed{
-    width: 100px;
-    height: 1000px;
+.two-cards{
+    display: flex;
+    justify-content: center;
+    // align-items: stretch;
+    height: 30rem;
+    .card{
+        flex-basis: 48%;
+        margin: 0 1rem;
+        height: 30rem;
+        z-index: 3;
+        
+        .card-body{
+            z-index: 3;
+        }
+        img{
+            object-fit: contain;
+            width: 100%;
+            height: 60%;
+        }
+    }
+    
 }
 
+
 .elementback{
-    background-color: #777777;
+    z-index: 2;
+    .card{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        box-shadow: 0 0 45px 3px rgba(0,0,0,0.2);
+        .card-head{
+            padding: 1rem 0;
+        }
+        .card-info{
+            flex-basis: 60%;
+            flex-grow: 1;
+            // border: 2px solid green;
+            text-align: start;
+            padding: 1rem;
+        }
+        .info-1{
+            width: 100%;
+            padding-top: 1rem;
+            padding-left: 1rem;
+            color: white;
+            font-weight: 600;
+        }
+    }
 }

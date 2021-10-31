@@ -68,13 +68,18 @@ background-image: linear-gradient(315deg, #06337a 10%, #06acda 74%);
         a,a:visited,a:active{
             text-decoration: none;
             color: #fff;
-            
+            // transition: all 0.3s ease-in-out;
         }
         li{
             // transform: scale(2);
             font-size: x-large;
             margin: 2rem 0;
             border-bottom: 2px solid #fff;
+            
+        }
+        a:hover{
+            color: #efefef;
+            border-bottom: 3px solid #efefef;
         }
     }
 }

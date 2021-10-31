@@ -908,13 +908,7 @@ label {
   overflow: hidden;
 }
 
-.cup::before {
-  content: "FILL";
-  font-size: 2rem;
-}
-
 .cup::after {
-  content: "";
   position: absolute;
   height: 200%;
   width: 200%;

@@ -1,5 +1,4 @@
-
-  // .cup {
+// .cup {
   //   position: absolute;
   //   bottom: 0;
   //   left: 50%;
@@ -23,40 +22,37 @@
   //   100% {background-position: 6000px 350px;}
   // }
 
-.cup {
-  position: relative;
-  background: burlywood;
-  border: 6px solid #262626;
-  border-top: 2px solid transparent;
-  border-radius: 15px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  width: 150px;
-  height: 180px;
-  overflow: hidden;
-}
-.cup::before{
-  content: "FILL";
-  font-size: 2rem;
-}
-.cup::after{
-  content: "";
-  position:absolute;
-  height: 200%; 
-  width: 200%;
-  bottom: 50%;
-  left: -50%;
-
-  background:#f8f8f8;
-  border-radius: 45% ;
-  animation: spin 30s ease-in-out;
-  animation-iteration-count: 1
-}
-@keyframes spin{
-  0%{
-    transform: translateY(0) rotate(0deg);
+  .cup {
+    position: relative;
+    background: burlywood;
+    border: 6px solid #262626;
+    border-top: 2px solid transparent;
+    border-radius: 15px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 150px;
+    height: 180px;
+    overflow: hidden;
   }
-  70%{
-    transform: translateY(-100%) rotate(500deg);
+  
+  .cup::after{
+  
+    position:absolute;
+    height: 200%; 
+    width: 200%;
+    bottom: 50%;
+    left: -50%;
+  
+    background:#f8f8f8;
+    border-radius: 45% ;
+    animation: spin 30s ease-in-out;
+    animation-iteration-count: 1
   }
-}
+  @keyframes spin{
+    0%{
+      transform: translateY(0) rotate(0deg);
+    }
+    70%{
+      transform: translateY(-100%) rotate(500deg);
+    }
+  }

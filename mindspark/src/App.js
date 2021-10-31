@@ -1,7 +1,6 @@
 
 import React, { Component } from 'react';
 
-
 import './CSS/styles.css';
 import './CSS/bootstrap.min.css';
 import Quiz from './components/Quiz';
@@ -58,8 +57,8 @@ function App() {
             <Sample />
           </Route>
           
-          <Route exact path = "/Quiz">
-            <Quiz element_no = {this.ele_num}/>
+          <Route exact path = "/quiz">
+            <Quiz/>
           </Route>
           
           <Route exact path="/quizcont/:id">

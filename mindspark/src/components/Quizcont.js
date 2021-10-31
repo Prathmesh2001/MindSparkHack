@@ -99,7 +99,7 @@ function Quizcont() {
         <div className="card-body">
             <h5 className="card-title">You've completed the Quiz!</h5>
             <p className="card-text">You got, {score} out of 10</p>
-            <Link className="btn btn-primary" to="/">Go somewhere</Link>
+            <Link className="btn btn-primary" to="/">Home</Link>
         </div>
       </div>
   )

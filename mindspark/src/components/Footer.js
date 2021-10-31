@@ -1,0 +1,31 @@
+import React from 'react'
+
+function Footer() {
+    return (
+        <div>
+        <footer className="footer">
+		
+		<div className="copyrights">
+			<p>&copy; All rights Reserved. EasyChemistry</p>
+		</div>
+		<div className="social-media-links">
+			<div className="media-link">
+				<a href="/"><i className="fab fa-instagram"></i></a>
+			</div>
+			<div className="media-link">
+				<a href="/"><i className="fab fa-facebook"></i></a>
+			</div>
+			<div className="media-link">
+				<a href="/"><i className="fab fa-twitter"></i></a>
+			</div>
+			<div className="media-link">
+				<a href="/"><i className="fab fa-linkedin"></i></a>
+			</div>
+		</div>
+
+    </footer>
+    </div>
+    )
+}
+
+export default Footer
